@@ -25,9 +25,11 @@
     }
 
     .logo img {
-      width: 120px;
-      height: auto;
-    }
+  width: 120px;
+  height: 120px; /* make height equal width for perfect circle */
+  border-radius: 50%;
+  object-fit: cover; /* ensures image scales nicely inside circle */
+}
 
     h1 {
       font-size: 26px;
